@@ -87,6 +87,7 @@ const AnimalsList = ({ animals }: FindAnimals) => {
                   >
                     Editar
                   </Link>
+                  
                   <button
                     type="button"
                     title={'Delete animal ' + animal.id}

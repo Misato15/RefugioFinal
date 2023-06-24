@@ -11,6 +11,8 @@ const HomePage = () => {
       <p>
       Amor y Abrigo es un refugio de animales con sede en la ciudad de San Pedro Sula, Honduras Tienen como misión rescatar, rehabilitar y dar en adopción animales abandonados. Su fuente de ingresos se basa 100% en donaciones y la venta de accesorios. Buscan también concientizar y educar a través de las redes sociales con el fin de minimizar el abuso animal en la sociedad Hondureña.
       </p>
+
+      <img src="https://th.bing.com/th/id/OIP.BTORf6fNwnsQBmxz7W53EgHaHa?pid=ImgDet&rs=1" alt="Logo Amor y Abrigo"></img>
       <nav className="rw-button-group">
         <Link
     

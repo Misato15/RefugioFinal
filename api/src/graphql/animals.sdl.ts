@@ -6,6 +6,7 @@ export const schema = gql`
     age: Int!
     color: String!
     specie: String!
+    gender: String!
     photo_url: String
     keeper: String
     vacunas: String
@@ -24,6 +25,7 @@ export const schema = gql`
     age: Int!
     color: String!
     specie: String!
+    gender: String!
     photo_url: String
     keeper: String
     vacunas: String
@@ -37,6 +39,7 @@ export const schema = gql`
     age: Int
     color: String
     specie: String
+    gender: String
     photo_url: String
     keeper: String
     vacunas: String

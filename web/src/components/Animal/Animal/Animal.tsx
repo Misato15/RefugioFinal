@@ -92,6 +92,10 @@ const Animal = ({ animal }: Props) => {
               <th>Alimentacion</th>
               <td>{animal.alimentacion}</td>
             </tr>
+            <tr>
+              <th>Genero</th>
+              <td>{animal.gender}</td>
+            </tr>
           </tbody>
         </table>
       </div>

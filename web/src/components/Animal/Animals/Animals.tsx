@@ -18,7 +18,7 @@ const DELETE_ANIMAL_MUTATION = gql`
 const AnimalsList = ({ animals }: FindAnimals) => {
   const [deleteAnimal] = useMutation(DELETE_ANIMAL_MUTATION, {
     onCompleted: () => {
-      toast.success('Animal deleted')
+      toast.success('Animal Borrado')
     },
     onError: (error) => {
       toast.error(error.message)
@@ -31,7 +31,7 @@ const AnimalsList = ({ animals }: FindAnimals) => {
   })
 
   const onDeleteClick = (id: DeleteAnimalMutationVariables['id']) => {
-    if (confirm('Are you sure you want to delete animal ' + id + '?')) {
+    if (confirm('¿Seguro quiere borrar el animal ' + id + '?')) {
       deleteAnimal({ variables: { id } })
     }
   }
@@ -52,6 +52,7 @@ const AnimalsList = ({ animals }: FindAnimals) => {
             <th>Vacunas</th>
             <th>Observaciones</th>
             <th>Alimentación</th>
+            <th>Género</th>
             <th>&nbsp;</th>
           </tr>
         </thead>
@@ -69,6 +70,7 @@ const AnimalsList = ({ animals }: FindAnimals) => {
               <td>{truncate(animal.vacunas)}</td>
               <td>{truncate(animal.observaciones)}</td>
               <td>{truncate(animal.alimentacion)}</td>
+              <td>{truncate(animal.gender)}</td>
               <td>
                 <nav className="rw-table-actions">
                   <Link
@@ -99,7 +101,19 @@ const AnimalsList = ({ animals }: FindAnimals) => {
           ))}
         </tbody>
       </table>
-    </div>
+
+      <nav className="rw-button-group">
+        <Link
+    
+          to={routes.home()}
+          className="rw-button rw-button-blue"
+        >
+          Home
+        </Link>
+        </nav>
+    </div> 
+
+    
   )
 }
 

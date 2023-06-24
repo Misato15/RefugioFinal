@@ -13,6 +13,7 @@ export const QUERY = gql`
       age
       color
       specie
+      gender
       photo_url
       keeper
       vacunas

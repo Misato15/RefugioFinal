@@ -125,6 +125,22 @@ const AnimalForm = (props: AnimalFormProps) => {
         <FieldError name="specie" className="rw-field-error" />
 
         <Label
+          name="gender"
+          className="rw-label"
+          errorClassName="rw-label rw-label-error"
+        >
+          Género
+        </Label>
+
+        <SelectField name="gender" multiple={false}>
+        <option>Macho</option>
+        <option>Hembra</option>
+  
+        </SelectField>
+
+        <FieldError name="gender" className="rw-field-error" />
+
+        <Label
           name="photo_url"
           className="rw-label"
           errorClassName="rw-label rw-label-error"

@@ -25,6 +25,7 @@ model Animal {
   age           Int
   color         String
   specie        String
+  gender        String
   photo_url     String?
   keeper        String?
   vacunas       String?

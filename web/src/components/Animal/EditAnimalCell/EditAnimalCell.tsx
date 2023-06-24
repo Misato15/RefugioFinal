@@ -16,6 +16,7 @@ export const QUERY = gql`
       age
       color
       specie
+      gender
       photo_url
       keeper
       vacunas
@@ -33,6 +34,7 @@ const UPDATE_ANIMAL_MUTATION = gql`
       age
       color
       specie
+      gender
       photo_url
       keeper
       vacunas
